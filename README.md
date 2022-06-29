@@ -14,11 +14,11 @@ The first step of this analysis was to get the employees retiring by title into 
 ```
 -- Create new table that lists employees retiring by title
 SELECT  em.emp_no,
-		em.first_name,
-		em.last_name,
-		ti.title,
-		ti.from_date,
-		ti.to_date
+em.first_name,
+em.last_name,
+ti.title,
+ti.from_date,
+ti.to_date
 INTO retirement_by_title
 FROM employees as em
 JOIN titles as ti
