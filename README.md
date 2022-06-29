@@ -71,6 +71,21 @@ This gave us a list of all the employees we needed, with the CSV output looking 
 
 ![mentorship_eligibility](https://user-images.githubusercontent.com/60283799/176558319-6167404d-9b26-4149-a7ee-b99a9e45482f.PNG)
 
+With this info, Pewlett-Hawkard can move forward and make decisions on who will fill the departing roles as employees retire. 
+
+We can see that:
+- Pewlett-Hawkard has a large workforce, and has a good amount of options to fill these positions. 
+- Their success as a company is due to their employees being long-tenured and driving production forward. 
 
 
 ## Summary 
+
+The total number of retiring employees can be found using the query shown below along with the output:
+```
+SELECT COUNT(emp_no) AS "Total Count of Retiring Employees"
+FROM non_dup_retirement_by_title;
+```
+![Total Count](https://user-images.githubusercontent.com/60283799/176560118-04a2baf8-a7c0-47a3-b2ad-c62933c2ba48.PNG)
+
+
+Currently at Pewlett-Hawkard, about 64% of the employees are getting ready to retire or entering the mentorship program. This means they will have to go through a rigorous hiring process in the coming years to keep their workforce strong and prepared. They must also account for time it takes to train these new employees and the employees moving up to senior positions in order to be fully prepared. 
