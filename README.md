@@ -40,5 +40,11 @@ ORDER BY "Count" DESC;
 
 ![retiring_titles](https://user-images.githubusercontent.com/60283799/176554889-f7d9c11b-d44d-419e-b4ce-9ce8c81dad88.PNG)
 
+This table shows us a few notable things:
+- Out of the 72,458 total employees eligible for retirement, over half of them (50,842) hikd senior positions. This is something that Pewlett Hackard would like to address as to not have a high number of vacant senior spots in their workforce.
+- The Manager position seems to be in good shape in terms of needing replacements, this could be due to a younger average age for managers or simply a lower number of total managers at the company. 
+- This is a very large amount of employees, and Pewlett Hackard must start preparing now so that their workflow isn't greatly affected by the departures. 
+
+
 
 ## Summary 
