@@ -41,9 +41,35 @@ ORDER BY "Count" DESC;
 ![retiring_titles](https://user-images.githubusercontent.com/60283799/176554889-f7d9c11b-d44d-419e-b4ce-9ce8c81dad88.PNG)
 
 This table shows us a few notable things:
-- Out of the 72,458 total employees eligible for retirement, over half of them (50,842) hikd senior positions. This is something that Pewlett Hackard would like to address as to not have a high number of vacant senior spots in their workforce.
+- Out of the 72,458 total employees eligible for retirement, over half of them (50,842) are senior positions. This is something that Pewlett-Hawkard would like to address as to not have a high number of vacant senior spots in their workforce.
 - The Manager position seems to be in good shape in terms of needing replacements, this could be due to a younger average age for managers or simply a lower number of total managers at the company. 
-- This is a very large amount of employees, and Pewlett Hackard must start preparing now so that their workflow isn't greatly affected by the departures. 
+- This is a very large amount of employees, and Pewlett-Hawkard must start preparing now so that their workflow isn't greatly affected by the departures. 
+
+### Employee Mentorship Program 
+
+The second objective of this analysis was to get a list of employees who qualified for the Employee Mentorship program. The criteria for this program was all current employees who were born in the year 1965. The query for this table was as follows: 
+```
+-- Creating to membership eligibility table
+SELECT DISTINCT ON (em.emp_no) em.emp_no,
+em.first_name,
+em.last_name,
+em.birth_date,
+dep.from_date,
+dep.to_date,
+ti.title
+INTO membership_eligibility
+FROM employees as em
+JOIN dept_emp as dep
+ON (em.emp_no = dep.emp_no) 
+JOIN titles as ti
+ON (em.emp_no = ti.emp_no) 
+WHERE (dep.to_date = '9999-01-01') AND 
+(em.birth_date BETWEEN '1965-01-01' AND '1965-12-31'  )
+ORDER BY em.emp_no
+```
+This gave us a list of all the employees we needed, with the CSV output looking like this: 
+
+![mentorship_eligibility](https://user-images.githubusercontent.com/60283799/176558319-6167404d-9b26-4149-a7ee-b99a9e45482f.PNG)
 
 
 
