@@ -2,7 +2,7 @@
 
 ## Overview 
 
-Pewlett-Hawkard is an international comapany that employs tens of thousands of workers, and just like any other company they have natural turnover with new people coming in and Senior Employees exiting the company. In this analysis we will look at the number of employees reitiring by title, as well as employees who qualify to participate in a mentorship program. This will help future-proof the company and prepare them for changes down the line. 
+Pewlett-Hawkard is an international company that employs tens of thousands of workers, and just like any other company they have natural turnover with new people coming in and Senior Employees exiting the company. In this analysis we will look at the number of employees retiring by title, as well as employees who qualify to participate in a mentorship program. This will help future-proof the company and prepare them for changes down the line. 
 
 
 ## Results
